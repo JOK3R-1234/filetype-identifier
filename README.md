@@ -23,3 +23,6 @@ A professional web-based file type identifier built with Python and Flask.
 ```bash
 git clone https://github.com/username/filetype-identifier.git
 cd filetype-identifier/web
+
+2. Install dependencies:
+pip3 install -r requirements.txt
