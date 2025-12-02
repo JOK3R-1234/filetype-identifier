@@ -29,36 +29,48 @@ A **professional, web-based file type identification tool** built with Python an
 
 1. Clone the repository:
 
-    git clone https://github.com/username/filetype-identifier.git  
-    cd filetype-identifier/web
+```bash
+git clone https://github.com/username/filetype-identifier.git
+cd filetype-identifier/web
+```
 
 2. Install dependencies:
 
-    pip3 install -r requirements.txt
+```bash
+pip3 install -r requirements.txt
+```
 
 3. Run the web app:
 
-    ./run.sh
+```bash
+./run.sh
+```
 
-4. Open your browser at [http://127.0.0.1:5000](http://127.0.0.1:5000)
+4. Open your browser at:
+
+```text
+http://127.0.0.1:5000
+```
 
 ---
 
 ## Directory Structure
 
-    web/
-    ├── filetype_web.py          # Flask backend
-    ├── static/
-    │   ├── main.js              # JavaScript
-    │   └── style.css            # CSS
-    ├── templates/
-    │   ├── base.html            # Base template
-    │   ├── analyze.html         # Analyze tab
-    │   ├── history.html         # History tab
-    │   └── about.html           # About tab
-    ├── run.sh                   # Easy launch script
-    ├── requirements.txt         # Python dependencies
-    └── README.md                # Project description
+```text
+web/
+├── filetype_web.py          # Flask backend
+├── static/
+│   ├── main.js              # JavaScript
+│   └── style.css            # CSS
+├── templates/
+│   ├── base.html            # Base template
+│   ├── analyze.html         # Analyze tab
+│   ├── history.html         # History tab
+│   └── about.html           # About tab
+├── run.sh                   # Easy launch script
+├── requirements.txt         # Python dependencies
+└── README.md                # Project description
+```
 
 ---
 
