@@ -1,0 +1,15 @@
+body{margin:0;padding:0;font-family:Arial,sans-serif;overflow-x:hidden;transition:0.5s;background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);color:#fff;}
+body.light{background:linear-gradient(135deg,#e0f7fa,#b2ebf2,#80deea);color:#000;}
+h1.glow{text-align:center;font-size:3rem;text-shadow:0 0 10px #fff,0 0 20px #0ff,0 0 30px #0ff;animation:glow 1.5s infinite alternate;}
+@keyframes glow{from{text-shadow:0 0 5px #fff,0 0 10px #0ff;}to{text-shadow:0 0 20px #fff,0 0 30px #0ff;}}
+button.btn-animated{animation:shake 0.8s infinite;}
+@keyframes shake{0%,100%{transform:translateX(0);}25%{transform:translateX(-5px);}75%{transform:translateX(5px);}}
+.dropzone{border:2px dashed #0ff;border-radius:15px;padding:30px;text-align:center;background:rgba(0,0,0,0.3);cursor:pointer;transition:0.3s;}
+.dropzone.dragover{background:rgba(0,255,255,0.2);}
+.table-result td,.table-result th{vertical-align:middle;}
+.falling-text{position:absolute;font-weight:bold;user-select:none;pointer-events:none;opacity:0.3;}
+.copy-btn{cursor:pointer;margin-left:5px;}
+.expandable{cursor:pointer;color:#0ff;}
+.table.light-mode thead{background-color:#0097a7;color:#fff;}
+.table.light-mode tbody tr:nth-child(even){background-color:#b2ebf2;color:#000;}
+.table.light-mode tbody tr:nth-child(odd){background-color:#e0f7fa;color:#000;}

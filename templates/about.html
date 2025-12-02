@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card bg-dark text-white p-4">
+<h3>About This Tool</h3>
+<p>This File Type Identifier works by using:</p>
+<ol>
+<li><strong>Magic Numbers/Signatures:</strong> checks first bytes against known signatures (PDF, PNG, MP3, EXE, ELF, etc.)</li>
+<li><strong>Text Heuristic:</strong> if no signature, checks for mostly printable text and guesses MIME type</li>
+<li><strong>Extension Fallback:</strong> guesses type from file extension if signature and heuristic fail</li>
+</ol>
+<p>Results show: Filename, Detected Type, Confidence, Detailed Detection Info.</p>
+<p>Additional features: Expandable details, Copy per row, Copy All, Dark/Light toggle, Bulk upload, Session-based history.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+<form method="POST" enctype="multipart/form-data">
+<div id="dropzone" class="dropzone mb-3">
+Drag & Drop files here or click to select
+<input type="file" id="fileinput" name="file" multiple class="form-control mt-3" required>
+</div>
+<button type="submit" class="btn btn-primary btn-animated">Analyze</button>
+</form>
+{% if results %}
+<table class="table table-striped table-result mt-4">
+<thead class="table-dark"><tr><th>Filename</th><th>Type</th><th>Confidence</th><th>Details</th><th>Copy</th></tr></thead>
+<tbody>
+{% for res in results %}
+<tr class="{% if res.confidence_class=='high' %}table-success{% elif res.confidence_class=='medium' %}table-warning{% else %}table-danger{% endif %}">
+<td>{{ res.filename }}</td>
+<td>{{ res.file_type }}</td>
+<td>{{ res.confidence }}</td>
+<td>
+<div class="expandable" onclick="this.nextElementSibling.classList.toggle('d-none')">Click to expand</div>
+<ul class="mb-0 d-none">{% for k,v in res.details.items() %}<li>{{ k }}: {{ v }}</li>{% endfor %}</ul>
+</td>
+<td><button class="btn btn-sm btn-secondary" onclick="copyText(this.closest('tr'))">Copy</button></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+</div>
+{% endblock %}
