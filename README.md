@@ -1,9 +1,5 @@
 # File Type Identifier - Web Version
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Flask](https://img.shields.io/badge/Flask-3.1.0-orange)
-
 A **professional, web-based file type identification tool** built with Python and Flask. Detects file types accurately using **magic signatures, text heuristics, and extensions**, and presents results in a visually appealing, interactive interface.
 
 ---
@@ -74,15 +70,8 @@ The File Type Identifier detects file types using a **combination of three metho
 2. **Text Heuristics**: Determines if a file is plain text (Python, TXT, Markdown, etc.) based on content analysis.  
 3. **Extension Fallback**: Uses the file extension when other methods cannot confidently detect the type.  
 
-The tool provides **fast, accurate, and visually clear results** via a modern web interface.  
+The tool is designed to provide **fast, accurate, and visually clear results** via a modern web interface.  
 It includes a **history table**, **copy functionality**, and a **dark/light theme toggle** for professional usability.
-
----
-
-## Screenshots / GIFs
-
-![Example Screenshot](https://via.placeholder.com/800x400.png?text=Web+Interface+Preview)
-![Example GIF](https://via.placeholder.com/800x400.gif?text=Animated+Preview)
 
 ---
 
@@ -98,12 +87,4 @@ MIT License – free to use, modify, and distribute.
 - Bulk file uploads with drag-and-drop support.  
 - Real-time progress indicators for large files.  
 - GitHub badges for Python version, license, stars, forks, etc.  
-- Additional screenshots or GIF previews.
-
----
-
-✅ **Instructions to Add This README:**
-
-1. Click **Edit README** on GitHub or create `README.md`.  
-2. Paste the entire block above.  
-3. Commit changes with a message like:
+- Screenshots or GIFs for web interface preview.
