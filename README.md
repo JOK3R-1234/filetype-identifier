@@ -29,7 +29,7 @@ A **professional, web-based file type identification tool** built with Python an
 
 1. Clone the repository:
 
-    git clone https://github.com/username/filetype-identifier.git
+    git clone https://github.com/username/filetype-identifier.git  
     cd filetype-identifier/web
 
 2. Install dependencies:
