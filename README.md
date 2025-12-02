@@ -7,8 +7,7 @@ A **professional, web-based file type identification tool** built with Python an
 ## Features
 
 - Detects all common file types (PNG, JPG, MP3, MP4, PDF, DOCX, GZ, TAR, WAV, OGG, ISO, TXT, Python scripts, and more).  
-- **High-confidence detection** for both binary and text files.  
-- Continuous **falling background texts** displaying file types for a dynamic look.  
+- **High-confidence detection** for both binary and text files.   
 - **Dark/Light mode toggle** with smooth transitions.  
 - **Copy buttons** beside each result and option to copy all results at once.  
 - **History table**: sortable, expandable, and color-coded by confidence.  
