@@ -1,28 +1,109 @@
 # File Type Identifier - Web Version
 
-A professional web-based file type identifier built with Python and Flask.
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Flask](https://img.shields.io/badge/Flask-3.1.0-orange)
+
+A **professional, web-based file type identification tool** built with Python and Flask. Detects file types accurately using **magic signatures, text heuristics, and extensions**, and presents results in a visually appealing, interactive interface.
+
+---
 
 ## Features
 
-- Detects file types using magic signatures, text heuristics, and extensions.
-- Color-coded table with confidence levels.
-- Continuous falling background texts.
-- Dark/Light mode toggle.
-- Copy individual results or all results.
-- History of analyzed files.
+- Detects all common file types (PNG, JPG, MP3, MP4, PDF, DOCX, GZ, TAR, WAV, OGG, ISO, TXT, Python scripts, and more).  
+- **High-confidence detection** for both binary and text files.  
+- Continuous **falling background texts** displaying file types for a dynamic look.  
+- **Dark/Light mode toggle** with smooth transitions.  
+- **Copy buttons** beside each result and option to copy all results at once.  
+- **History table**: sortable, expandable, and color-coded by confidence.  
+- Responsive design for desktops, tablets, and mobile devices.  
+- Interactive animations for buttons, headers, and table highlights.  
+
+---
 
 ## Requirements
 
-- Python 3.8+
-- Flask
+- Python 3.8+  
+- Pip 3  
+- Flask (and other dependencies in `requirements.txt`)
 
-## Installation
+---
+
+## Installation & Usage
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/username/filetype-identifier.git
-cd filetype-identifier/web
+    git clone https://github.com/username/filetype-identifier.git
+    cd filetype-identifier/web
 
 2. Install dependencies:
-pip3 install -r requirements.txt
+
+    pip3 install -r requirements.txt
+
+3. Run the web app:
+
+    ./run.sh
+
+4. Open your browser at [http://127.0.0.1:5000](http://127.0.0.1:5000)
+
+---
+
+## Directory Structure
+
+    web/
+    ├── filetype_web.py          # Flask backend
+    ├── static/
+    │   ├── main.js              # JavaScript
+    │   └── style.css            # CSS
+    ├── templates/
+    │   ├── base.html            # Base template
+    │   ├── analyze.html         # Analyze tab
+    │   ├── history.html         # History tab
+    │   └── about.html           # About tab
+    ├── run.sh                   # Easy launch script
+    ├── requirements.txt         # Python dependencies
+    └── README.md                # Project description
+
+---
+
+## About / How it Works
+
+The File Type Identifier detects file types using a **combination of three methods**:
+
+1. **Magic Signature Detection**: Checks the file’s binary signature (first few bytes) for known patterns.  
+2. **Text Heuristics**: Determines if a file is plain text (Python, TXT, Markdown, etc.) based on content analysis.  
+3. **Extension Fallback**: Uses the file extension when other methods cannot confidently detect the type.  
+
+The tool provides **fast, accurate, and visually clear results** via a modern web interface.  
+It includes a **history table**, **copy functionality**, and a **dark/light theme toggle** for professional usability.
+
+---
+
+## Screenshots / GIFs
+
+![Example Screenshot](https://via.placeholder.com/800x400.png?text=Web+Interface+Preview)
+![Example GIF](https://via.placeholder.com/800x400.gif?text=Animated+Preview)
+
+---
+
+## License
+
+MIT License – free to use, modify, and distribute.
+
+---
+
+## Optional Enhancements / Future Features
+
+- Export analysis results as CSV/JSON for reporting.  
+- Bulk file uploads with drag-and-drop support.  
+- Real-time progress indicators for large files.  
+- GitHub badges for Python version, license, stars, forks, etc.  
+- Additional screenshots or GIF previews.
+
+---
+
+✅ **Instructions to Add This README:**
+
+1. Click **Edit README** on GitHub or create `README.md`.  
+2. Paste the entire block above.  
+3. Commit changes with a message like:
